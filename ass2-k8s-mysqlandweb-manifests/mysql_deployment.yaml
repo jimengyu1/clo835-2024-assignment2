@@ -4,9 +4,9 @@ metadata:
   name: ass2-mysql-deployment
   namespace: ass2
   labels:
-    app: mysql
+    app: mysqldb
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: mysql

@@ -4,7 +4,7 @@ metadata:
   name: ass2-mysql-pod
   namespace: ass2
   labels:
-    app: mysql
+    app: mysqldb
 
 spec:
   containers:

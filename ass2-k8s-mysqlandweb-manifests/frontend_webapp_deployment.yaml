@@ -4,7 +4,7 @@ metadata:
   name: ass2-webapp-deployment
   namespace: ass2-web
   labels:
-    app: employees
+    app: employeeswebapp
 spec:
   replicas: 3
   selector:
