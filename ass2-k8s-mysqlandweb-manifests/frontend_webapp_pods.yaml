@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: ass2-webapp-pod
-  namespace: ass2
+  namespace: ass2-web
   labels:
-    app: employees
+    app: webapp
 
 spec:
   containers:

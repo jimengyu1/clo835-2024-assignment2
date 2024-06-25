@@ -4,9 +4,9 @@ metadata:
   name: ass2-webapp-deployment
   namespace: ass2-web
   labels:
-    app: employees
+    app: employeeswebapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: employees
@@ -16,11 +16,11 @@ spec:
         app: employees
     spec:
       containers:
-      - name: app
+      - name: ass2-webapp-container
+        image: 034644060220.dkr.ecr.us-east-1.amazonaws.com/assignment2-images-repo:Ass2webapp-v0.1
         ports:
         - containerPort: 8080
           protocol: TCP
-        image: 015937355141.dkr.ecr.us-east-1.amazonaws.com/mywebapp:v1.0
         env:
         - name: DBHOST
           value: "ass2-mysql-service.ass2.svc.cluster.local"

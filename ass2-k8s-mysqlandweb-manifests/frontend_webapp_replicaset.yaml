@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: ass2-webapp-replicaset
-  namespace: ass2
+  namespace: ass2-web
   labels:
     app: employees
 spec:
