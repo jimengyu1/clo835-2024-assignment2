@@ -38,7 +38,7 @@ color_codes = {
 }
 
 
-# Create a string of supported colors
+# Create a string of supported color
 SUPPORTED_COLORS = ",".join(color_codes.keys())
 
 # Generate a random color
